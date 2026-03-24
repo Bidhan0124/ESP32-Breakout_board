@@ -88,9 +88,9 @@ FreeRouting plugin for autorouting
 
 &#x20;\[x] Gerbers generated
 
-&#x20;\[] Fabricated
+&#x20;\[ ] Fabricated
 
-&#x20;\[]Tested
+&#x20;\[ ]Tested
 
 
 
