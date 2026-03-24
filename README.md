@@ -41,11 +41,10 @@ This is my first PCB design project.
 
 **Design Decisions:**
 
-1. Power select jumper — Instead of hardwiring 3.3V, I added a 3-pin jumper so the board can be powered from the onboard 3.3V rail or an external voltage source. More flexible for different prototyping scenarios where different voltages may be needed.
+1. Power select jumper — Instead of hardwiring 3.3V, I added a 3-pad solder jumper so the board can be powered from the onboard 3.3V rail or an external voltage source. More flexible for different prototyping scenarios where different voltages may be needed.
 2. I2C pull-ups on the bus — Added 4.7kΩ pull-up resistors on SDA and SCL once on the board rather than per device. I2C is an open-drain bus so the pull-ups are a bus property, not a per-device one. Two headers on the same bus means you can connect multiple devices simultaneously as long as they are initialized with unique addresses.
-3. D15 pull-down — D15 is used as CS2 for SPI2. It's also a strapping pin on the ESP32 with an internal pull-up active during boot. I have added a 10kΩ pull-down from D15 to GND to ensure the SPI peripheral ignores the pin cleanly during the boot sequence,so no errors occur.
-
-&#x20;  Shared SPI bus — SPI1 and SPI2 share the same SCK, MOSI, and MISO lines but have independent CS pins. 
+3. Shared SPI bus — SPI1 and SPI2 share the same SCK, MOSI, and MISO lines but have independent CS pins. 
+4. 8mm trace width for power lines and 2mm for signal lines.
 
 
 
