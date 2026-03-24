@@ -29,21 +29,13 @@ This is my first PCB design project.
 
 **3D Render**
 
-**!\[3D Render](images/3d\_render.png)**
+!\[3D Render](images/3d\_render.png)
 
 
 
 **Schematic**
 
-**!\[Schematic](images/schematic.svg)**
-
-
-
-
-
-
-
-
+!\[Schematic](images/schematic.svg)
 
 
 
